@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>تمریت تغییر متن</title>
+    <title> محاسبه سن</title>
 </head>
 <body>
-<h1 id="title">سلام من یک متن هستم</h1>
-<button id="btn">کلیک کن</button>
+<h1> محاسبه سن</h1>
 <script>
-let button=
-    document.getElementById('btn');
-    let title =
-        document.getElementById('title');
-    button.addEventListener('click',function(){
-       title.textContent = "تبریک شماکلیک کردی";
-       title.style.color = "green";
-    });
+let brithyear = prompt('سال تولدت چنده؟');
+let currentyear = new
+    Date().getFullYear();
+    let age =currentyear-brithyear;
+    alert('سن شما حدود'+age + 'سال است');
+    console.log('کاربر متولد'+brithyear+ 'است'+ age + 'سال دارد')
 </script>
 </body>
 </html>
