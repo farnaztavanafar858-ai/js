@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تمریت تغییر متن</title>
+</head>
+<body>
+<h1 id="title">سلام من یک متن هستم</h1>
+<button id="btn">کلیک کن</button>
+<script>
+let button=
+    document.getElementById('btn');
+    let title =
+        document.getElementById('title');
+    button.addEventListener('click',function(){
+       title.textContent = "تبریک شماکلیک کردی";
+       title.style.color = "green";
+    });
+</script>
+</body>
+</html>
